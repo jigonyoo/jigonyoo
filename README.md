@@ -8,7 +8,7 @@ Every figure below sits in a public MIT repository beside the script that produc
 | Side effects that execute twice | 40 concurrent OS processes racing one refund — **20/20** deterministic detections of two reclaim-path defects that a statistical race test passed | [once-guard](https://github.com/jigonyoo/once-guard) |
 | Prompt injection, tested against itself | **26/26** on the corpus written *for* it — **5/42** on the corpus written to *break* it | [llm-guardrails](https://github.com/jigonyoo/llm-guardrails) |
 | Airflow DAGs, parsed instead of imported | **12/12** planted defects caught, **0** false positives on the clean DAG | [dag-guard](https://github.com/jigonyoo/dag-guard) |
-| Loads that exit zero and are still wrong | a sabotaged batch fails **12** contract tests; the clean batch passes with **0** — catches a load that overstates revenue by 1,139% | [warehouse-quality-gate](https://github.com/jigonyoo/warehouse-quality-gate) |
+| Loads that exit zero and are still wrong | a sabotaged batch fails **12** contract tests; the clean batch passes with **0** — the batch it stops reports $4,905,051 of revenue with zero load errors, $4.5M of it from one row | [warehouse-quality-gate](https://github.com/jigonyoo/warehouse-quality-gate) |
 
 **The 5/42 is the number I lead with.** A filter tested only against the corpus
 written for it has not been tested. Both corpora are published, so the bad
